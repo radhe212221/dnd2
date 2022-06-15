@@ -55,6 +55,38 @@ header
     background-color: tomato;
     color:white;
 }
+.services
+{
+    padding: 2%;
+    text-align: center;
+    background-color: grey;
+}
+.services .flex
+{
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.services .flex .item
+{
+    background-color: white;
+    width: 20%;
+    margin:1%;
+    padding: 1%;
+    box-shadow: 0 10px 10px black;
+}
+.services .flex .item *
+{
+    display: block;
+    margin:5px auto;
+}
+.services .flex .item button
+{
+    background-color: black;
+    color:white;
+    margin: 10px auto;
+}
 
 @media (max-width:500px)
 {
@@ -72,5 +104,9 @@ header
         display: block;
         width: 100%;
         margin-bottom: 10px;
+    }
+    .services .flex .item
+    {
+        width: 40%;
     }
 }
