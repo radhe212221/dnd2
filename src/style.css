@@ -29,6 +29,16 @@ header
     justify-content: space-between;
 }
 
+.about
+{
+    padding: 2%;
+    background-color: silver;
+}
+.about button
+{
+    background-color: black;
+    color:white;
+}
 @media (max-width:500px)
 {
     button,input,textarea,a
