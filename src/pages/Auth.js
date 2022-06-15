@@ -1,6 +1,10 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
+import { useDispatch } from 'react-redux'
+import { useNavigate } from 'react-router-dom'
 import { loginService, signupService } from '../services'
 export default function Auth() {
+  const navigate = useNavigate()
+  const dispatch = useDispatch()
   const [ob1, setob1] = useState({
     email: "", password: ""
   })
@@ -21,7 +25,13 @@ export default function Auth() {
 
   const login = () => {
     loginService(ob1)
-      .then(d => console.log(d))
+      .then(d => {
+        if (d !== null) {
+          localStorage.setItem("user", JSON.stringify(d))
+          dispatch({ type: "login", payload: d })
+          navigate("/dashboard")
+        }
+      })
       .catch(e => console.log(e))
   }
 
@@ -32,6 +42,14 @@ export default function Auth() {
 
   }
 
+  const boot = () => {
+    if (localStorage.getItem("user")) {
+      dispatch({ type: "login", payload: JSON.parse(localStorage.getItem("user")) })
+      navigate("/dashboard")
+    }
+  }
+
+  useEffect(boot, [])
 
   return (
     <div className='auth'>
