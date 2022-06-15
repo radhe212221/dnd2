@@ -169,7 +169,21 @@ header
     padding: 10px 30px;
     border-radius: 100px;
 }
+.map
+{
+    padding: 2%;
+}
+.map img{
+    width: 100%;
+}
+footer
+{
+    padding: 2%;
+    background-color: black;
+    color:white;
+    text-align: center;
 
+}
 @media (max-width:500px)
 {
     button,input,textarea,a
