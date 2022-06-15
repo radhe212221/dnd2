@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Footer() {
+export default function Footer({ data }) {
   return (
     <footer>
-      copyrights &copy; company-name &trade; - year
+      {data || "copyrights &copy; company-name &trade; - year"}
     </footer>
   )
 }

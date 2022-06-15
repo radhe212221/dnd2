@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Map() {
+export default function Map({ data }) {
   return (
     <div className='map'>
-      <img src="https://www.w3schools.com/w3images/map.jpg" />
+      <img src={data || "https://www.w3schools.com/w3images/map.jpg"} />
     </div>
   )
 }

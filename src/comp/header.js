@@ -1,18 +1,11 @@
 import React from 'react'
 
-export default function Header() {
+export default function Header({ data }) {
   return (
     <header>
-      <div>logo</div>
+      <div>{data?.logo || ''}</div>
       <div>
-        <a>home</a>
-        <a>contact</a>
-        <a>about</a>
-        <a>services</a>
-        <a>team</a>
-        <a>price</a>
-        <a>map</a>
-        <a>footer</a>
+        {data?.links?.map(x => <a>{x}</a>)}
       </div>
     </header>
   )
