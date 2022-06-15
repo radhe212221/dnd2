@@ -199,6 +199,15 @@ footer
     width: 100%;
     margin-bottom: 5px;
 }
+.crud
+{
+    padding: 2%;;
+    background-color: silver;
+}
+.crud input
+{
+    margin:5px;
+}
 @media (max-width:500px)
 {
     button,input,textarea,a
