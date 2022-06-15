@@ -169,6 +169,7 @@ header
     padding: 10px 30px;
     border-radius: 100px;
 }
+
 @media (max-width:500px)
 {
     button,input,textarea,a
@@ -195,6 +196,14 @@ header
         flex-flow: column;
     }
     .team .flex .item
+    {
+        width: auto;
+    }
+    .pricing .flex
+    {
+        flex-flow: column;
+    }
+    .pricing .flex .item
     {
         width: auto;
     }
