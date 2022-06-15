@@ -6,6 +6,7 @@ body
 
 *
 {
+    box-sizing: border-box;
     text-decoration: none;
     outline:0;
     border:0;
@@ -39,6 +40,22 @@ header
     background-color: black;
     color:white;
 }
+.contact
+{
+    padding: 2%;
+    background-color: black;
+    color:white;
+}
+.contact input
+{
+    margin-right:10px;
+}
+.contact button
+{
+    background-color: tomato;
+    color:white;
+}
+
 @media (max-width:500px)
 {
     button,input,textarea,a
@@ -49,5 +66,11 @@ header
     header
     {
         flex-flow: column;
+    }
+    .contact input
+    {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
     }
 }
