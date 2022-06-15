@@ -88,6 +88,38 @@ header
     margin: 10px auto;
 }
 
+.team
+{
+    background-color: silver;
+    padding: 2%;
+    text-align: center;
+}
+.team .flex
+{
+    display: flex;
+    justify-content: center;
+}
+.team .flex .item
+{
+    box-shadow: 0 10px 10px black;
+    background-color: white;
+    width: 21%;
+    padding: 1%;
+    margin:1%;
+    line-height: 8px;
+}
+.team .flex .item img
+{
+    width: 100%;
+}
+.team .flex .item a
+{
+    padding: 10px;
+    background-color: tomato;
+    color:white;
+    display: block;
+}
+
 @media (max-width:500px)
 {
     button,input,textarea,a
@@ -108,5 +140,13 @@ header
     .services .flex .item
     {
         width: 40%;
+    }
+    .team .flex 
+    {
+        flex-flow: column;
+    }
+    .team .flex .item
+    {
+        width: auto;
     }
 }
