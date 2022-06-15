@@ -29,3 +29,15 @@ header
     justify-content: space-between;
 }
 
+@media (max-width:500px)
+{
+    button,input,textarea,a
+    {
+        padding: 5px;
+        font-size: 12px;
+    }
+    header
+    {
+        flex-flow: column;
+    }
+}
