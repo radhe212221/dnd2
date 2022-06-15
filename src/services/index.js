@@ -3,7 +3,7 @@ const users = 'https://fbecomm-8bab6-default-rtdb.firebaseio.com/dndusers.json'
 const site = 'https://fbecomm-8bab6-default-rtdb.firebaseio.com/dndsite.json'
 
 
-const transform = ob => {
+export const transform = ob => {
     let x = Object.keys(ob)
     let y = Object.values(ob)
     let temp = []

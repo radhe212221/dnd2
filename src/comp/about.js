@@ -1,11 +1,11 @@
 import React from 'react'
 
-export default function About({data}) {
+export default function About(props) {
   return (
     <div className='about'>
       <h1>About Us</h1>
       <p>
-        {data}
+        {props['about["data"]']}
       </p>
 
       <button>learn more</button>

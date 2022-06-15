@@ -1,11 +1,11 @@
 import React from 'react'
 
-export default function Header({ data }) {
+export default function Header(props) {
   return (
     <header>
-      <div>{data?.logo || ''}</div>
+      <div>{props['header["data"]["logo"]'] || ''}</div>
       <div>
-        {data?.links?.map(x => <a>{x}</a>)}
+        {props['header["data"]["links"]']?.split(',') || [].map(x => <a>{x}</a>)}
       </div>
     </header>
   )
