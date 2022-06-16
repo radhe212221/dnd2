@@ -1,7 +1,8 @@
 import React from 'react'
 
-export default function Services({ data }) {
+export default function Services(props) {
   // const a = ["html", 'css', "js", "react", "angulkar", "redux", "api", "frontned", "backend"]
+  let data = props['services["data"]'].split(",") || []
   return (
     <div className='services'>
       <h1>our services</h1>

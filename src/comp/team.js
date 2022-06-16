@@ -1,6 +1,8 @@
 import React from 'react'
 
-export default function Team({data}) {
+export default function Team(props) {
+  let data=[]
+  console.log(props)
   // const a = [
   //   { src: "https://www.w3schools.com/w3images/team1.jpg", h2: "demo1", h3: "frontend", h4: "html5", a: "#" },
   //   { src: "https://www.w3schools.com/w3images/team2.jpg", h2: "demo2", h3: "frontend", h4: "html5", a: "#" },

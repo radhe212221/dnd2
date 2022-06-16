@@ -1,6 +1,7 @@
 import React from 'react'
 
-export default function Contact({ data }) {
+export default function Contact(props) {
+  let data = props['contact["data"]'].split(",") || []
   return (
     <div className='contact'>
       <h1>Contact Us</h1>
